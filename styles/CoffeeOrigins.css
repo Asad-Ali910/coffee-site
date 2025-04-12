@@ -1,0 +1,33 @@
+/* If you have a custom CSS file for the CoffeeOrigins section, add this code there */
+
+/* Style for the CoffeeOrigins section */
+.coffee-origins {
+    background-color: #f7fafc; /* Light gray background */
+  }
+  
+  .coffee-origins .origin-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .coffee-origins .origin-card:hover {
+    transform: translateY(-10px); /* Slight hover effect */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Adding shadow on hover */
+  }
+  
+  .coffee-origins .origin-card img {
+    border-radius: 0.5rem; /* Round corners for images */
+    object-fit: cover; /* Ensures image covers the space without distortion */
+    height: 160px; /* Fixed height for image */
+  }
+  
+  /* If you want more control over text and margins, add the following */
+  .coffee-origins h2 {
+    font-size: 2.5rem; /* Larger text for the title */
+    margin-bottom: 1.5rem;
+  }
+  
+  .coffee-origins .text-lg {
+    font-size: 1.125rem;
+    margin-bottom: 2rem;
+  }
+  

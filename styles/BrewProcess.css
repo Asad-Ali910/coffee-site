@@ -1,0 +1,59 @@
+.brew-process-section {
+  background-color: #222; /* Dark background for the fantasy theme */
+  padding: 50px 0;
+  text-align: center;
+}
+
+.section-heading {
+  font-size: 2rem;
+  color: #fff;
+  margin-bottom: 40px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.brew-scroll-container {
+  display: flex;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+}
+
+.brew-step {
+  width: 300px;
+  flex-shrink: 0;
+  margin: 0 15px;
+  background: linear-gradient(145deg, rgba(28, 28, 28, 1), rgba(38, 38, 38, 1));
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  scroll-snap-align: center;
+  transition: transform 0.5s ease;
+}
+
+.brew-step-content {
+  color: #fff;
+}
+
+.brew-step-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.brew-step-description {
+  font-size: 1rem;
+  font-style: italic;
+  color: #ccc;
+}
+
+.brew-step:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+}
+
+.brew-step img {
+  max-width: 100%;
+  border-radius: 10px;
+}

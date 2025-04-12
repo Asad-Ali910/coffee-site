@@ -1,0 +1,138 @@
+/* Section Styles */
+.menu-section {
+    padding: 50px 20px;
+    background-color: #f8f8f8;
+  }
+  
+  .menu-heading {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 2rem;
+  }
+  
+  /* Grid Layout */
+  .menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    justify-items: center;
+  }
+  
+  /* Coffee Card Styles */
+  .coffee-card {
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    max-width: 300px;
+    transition: transform 0.3s ease;
+  }
+  
+  .coffee-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  /* Coffee Image Styles */
+  .coffee-img-wrapper {
+    background-color: #e6d3ba; /* light coffee-ish tone */
+    overflow: hidden;
+    border-radius: 0.5rem;
+  }
+  
+  .coffee-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: opacity 0.4s ease;
+    opacity: 0; /* Start with hidden image */
+  }
+  
+  /* When the image is loaded, make it visible */
+  .coffee-img-wrapper.loaded .coffee-img {
+    opacity: 1;
+  }
+  
+  /* Coffee Info Styles */
+  .coffee-info {
+    padding: 20px;
+  }
+  
+  h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+  }
+  
+  .desc {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 1rem;
+  }
+  
+  .price {
+    font-size: 1.25rem;
+    color: #007bff;
+    font-weight: bold;
+  }
+  
+  /* Skeleton Loading Styles */
+  .skeleton-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .skeleton {
+    background-color: #e0e0e0;
+    border-radius: 8px;
+    margin: 10px 0;
+  }
+  
+  .skeleton.w-full {
+    width: 100%;
+  }
+  
+  .skeleton.h-40 {
+    height: 160px;
+  }
+  
+  .skeleton.h-4 {
+    height: 16px;
+  }
+  
+  .skeleton.w-3/4 {
+    width: 75%;
+  }
+  
+  .skeleton.w-5/6 {
+    width: 83.33%;
+  }
+  
+  .skeleton.w-1/4 {
+    width: 25%;
+  }
+  
+  /* Fade-In and Fade-Out Transitions */
+  .fade-out {
+    opacity: 1;
+    transition: opacity 0.5s ease;
+  }
+  
+  .fade-in {
+    animation: fadeIn 0.6s ease-in forwards;
+    opacity: 0;
+  }
+  
+  /* Keyframes for smooth fade-in effect */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0px);
+    }
+  }
+  
